@@ -10,3 +10,11 @@
         1，protocol，协议头，例如http，ftp，https
         
         2，posrt，主机域名或IP地址
+        
+        3，port，端口号
+        
+        4，path，目录路径
+        
+        5，query，查询参数
+        
+        6，fragment，#后的哈希值
