@@ -9,7 +9,7 @@
     
         1，protocol，协议头，例如http，ftp，https
         
-        2，posrt，主机域名或IP地址
+        2，host，主机域名或IP地址
         
         3，port，端口号
         
@@ -18,3 +18,7 @@
         5，query，查询参数
         
         6，fragment，#后的哈希值
+        
+每次网络请求都需要开辟独立的线程
+
+DNS查询得到IP
