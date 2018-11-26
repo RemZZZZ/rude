@@ -59,7 +59,7 @@
       
 5，http报文结构
 
-    通用头部：
+   通用头部：
     
       Request Url：请求的web服务器地址
       
@@ -71,7 +71,7 @@
       
       Referrer Policy： 用于过滤 Referrer 报头内容，目前是一个候选标准，不过已经有部分浏览器支持该标准
       
-    请求头部：
+   请求头部：
       
       Accept: 接收类型，表示浏览器支持的MIME类型（对标服务端返回的Content-Type）
       
