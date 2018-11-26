@@ -5,6 +5,8 @@
 
 解析URL：
 
-URL主要组成部分：
+    URL主要组成部分：
 
-1，protocol，协议头，例如http，ftp，https
+       1，protocol，协议头，例如http，ftp，https
+       
+       2，host，主机域名或ip地址
