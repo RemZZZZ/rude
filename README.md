@@ -46,3 +46,10 @@
        3，接收者：也关闭主动传输信息通道
        
        4，发起者：接收到信息，关闭通道，通信结束
+     
+   get和post区别
+   
+      get和post本质上都是tcp/IP
+      get会产生一个数据包，post产生两个
+      get请求，浏览器会把 header 和 data 一起发送
+      post请求，浏览器先发送 header ，服务器响应 100continue ，浏览器在发送 data （更安全） 
