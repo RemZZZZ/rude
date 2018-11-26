@@ -100,3 +100,43 @@
       Referer：该页面的来源URL(适用于所有类型的请求，会精确到详细页面地址，csrf拦截常用到这个字段)
       
       User-Agent：用户客户端的一些必要信息，如UA头部等
+      
+  响应头部：
+  
+      Access-Control-Allow-Headers: 服务器端允许的请求Headers
+      
+      Access-Control-Allow-Methods: 服务器端允许的请求方法
+      
+      Access-Control-Allow-Origin: 服务器端允许的请求Origin头部（譬如为*）
+      
+      Content-Type：服务端返回的实体内容的类型
+      
+      Date：数据从服务器发送的时间
+      
+      Cache-Control：告诉浏览器或其他客户，什么环境可以安全的缓存文档
+      
+      Last-Modified：请求资源的最后修改时间
+      
+      Expires：应该在什么时候认为文档已经过期,从而不再缓存它
+      
+      Max-age：客户端的本地资源应该缓存多少秒，开启了Cache-Control后有效
+      
+      ETag：请求变量的实体标签的当前值
+      
+      Set-Cookie：设置和页面关联的cookie，服务器通过这个头部把cookie传给客户端
+      
+      Keep-Alive：如果客户端有keep-alive，服务端也会有响应（如timeout=38）
+      
+      Server：服务器的一些相关信息
+      
+6，HTML解析，构建DOM
+
+   Bytes - characters - tokens - nodes - dom
+   
+      conversion转换：浏览器将获得的HTML内容（Bytes）基于编码转换成字符
+      
+      tokenizing分词：浏览器按照HTML规范将字符转换为不同标记的 token，每个 token 都有自己独特的含义以及规则集
+      
+      Lexing词法分析：分词的结果是得到一堆的 token ，此时把他们转换为对象，这些对象分别定义他们的属性和规则
+      
+      DOM构建：因为HTML标记定义的就是不同标签之间的关系，这个关系就像是一个树形结构一样
