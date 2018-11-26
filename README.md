@@ -3,7 +3,7 @@
 
 接收url -> 分配http线程 -> dns查询得到IP -> 发送TCP/IP请求 -> 接收服务端信息 -> 解析html，构建dom树 -> 解析css，构建css规则树 -> 合并dom树和css规则树，生成render树 -> 布局render树 -> 绘制render树 -> GPU显示
 
-解析URL：
+1，解析URL：
 
     url解析：
     
@@ -19,6 +19,8 @@
         
         6，fragment，#后的哈希值
         
-每次网络请求都需要开辟独立的线程
+2，每次网络请求都需要开辟独立的线程
 
-DNS查询得到IP
+3，DNS查询得到IP
+
+   优先级：浏览器缓存 -> 本机缓存 -> host -> 向dns域名服务器查询
